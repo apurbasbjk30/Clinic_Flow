@@ -6,7 +6,6 @@ export default function Navbar({ onSearch, toggleNotifications, onFilterChange }
   const [year, setYear] = useState("");
   const [month, setMonth] = useState("");
   const [week, setWeek] = useState("");
-
   const filterRef = useRef(null);
 
   // Close dropdown when clicking outside
@@ -31,7 +30,6 @@ export default function Navbar({ onSearch, toggleNotifications, onFilterChange }
     if (type === "year") setYear(value);
     if (type === "month") setMonth(value);
     if (type === "week") setWeek(value);
-
     onFilterChange?.({
       year: type === "year" ? value : year,
       month: type === "month" ? value : month,
@@ -50,7 +48,7 @@ export default function Navbar({ onSearch, toggleNotifications, onFilterChange }
         {/* Search bar */}
         <input
           type="text"
-          placeholder="Search leads..."
+          placeholder="Search by name..."
           className="border rounded-md p-2 w-64"
           onChange={(e) => onSearch(e.target.value)}
         />

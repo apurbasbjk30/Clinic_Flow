@@ -18,9 +18,11 @@ export default function Dashboard() {
     setShowNotifications((prev) => !prev);
   };
 
+  const [searchQuery, setSearchQuery] = useState("");
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Navbar toggleNotifications={toggleNotifications} />
+      <Navbar  onSearch={setSearchQuery}
+       toggleNotifications={toggleNotifications} />
 
       {/* Render NotificationsPanel only if showNotifications is true */}
      
@@ -29,7 +31,8 @@ export default function Dashboard() {
         <KPICards />
         <div className="grid md:grid-cols-2 gap-6">
           <ChartsPanel />
-          <LeadsTable />
+           <LeadsTable searchQuery={searchQuery} />
+          {/* <LeadsTable /> */}
         </div>
         <BookingImpactChart />
         <div className="grid md:grid-cols-2 gap-6">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BellIcon, FunnelIcon, UserCircleIcon } from "@heroicons/react/24/outline";
 
 export default function Navbar({ onSearch, toggleNotifications, onFilterChange }) {
@@ -7,7 +7,19 @@ export default function Navbar({ onSearch, toggleNotifications, onFilterChange }
   const [month, setMonth] = useState("");
   const [week, setWeek] = useState("");
 
-  // Generate years dynamically (e.g., 2022–2025)
+  const filterRef = useRef(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (filterRef.current && !filterRef.current.contains(event.target)) {
+        setFilterOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const years = [2022, 2023, 2024, 2025];
   const months = [
     "January", "February", "March", "April", "May", "June",
@@ -15,7 +27,6 @@ export default function Navbar({ onSearch, toggleNotifications, onFilterChange }
   ];
   const weeks = ["Week 1", "Week 2", "Week 3", "Week 4"];
 
-  // Handle filter updates
   const handleFilterChange = (type, value) => {
     if (type === "year") setYear(value);
     if (type === "month") setMonth(value);
@@ -45,8 +56,14 @@ export default function Navbar({ onSearch, toggleNotifications, onFilterChange }
         />
 
         {/* Filter Dropdown */}
-        <div className="relative cursor-pointer" onClick={() => setFilterOpen(!filterOpen)}>
-          <FunnelIcon className="h-6 w-6 text-gray-600 hover:text-blue-600" />
+        <div className="relative" ref={filterRef}>
+          <button
+            className="cursor-pointer"
+            onClick={() => setFilterOpen(!filterOpen)}
+          >
+            <FunnelIcon className="h-6 w-6 text-gray-600 hover:text-blue-600" />
+          </button>
+
           {filterOpen && (
             <div className="absolute right-0 top-8 border rounded-md shadow-md p-3 bg-white w-60 z-50 space-y-2">
               <label className="block text-sm text-gray-600 font-medium">Year</label>

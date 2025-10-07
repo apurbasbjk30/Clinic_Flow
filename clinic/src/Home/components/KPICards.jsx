@@ -12,7 +12,7 @@ export default function KPICards() {
   });
 
   useEffect(() => {
-    Papa.parse("../../assets/clinic_facebook_leads.csv", {
+    Papa.parse("../../../public/clinic_facebook_leads (1).csv", {
       download: true,
       header: true,
       skipEmptyLines: true,
@@ -54,7 +54,7 @@ export default function KPICards() {
           totalLeads,
           bookingsConfirmed,
           conversionRate,
-          avgLeadScore,
+          // avgLeadScore,
           consentRate,
         });
       },
@@ -65,12 +65,22 @@ export default function KPICards() {
     { title: "Total Leads", value: kpi.totalLeads },
     { title: "Bookings Confirmed", value: kpi.bookingsConfirmed },
     { title: "Conversion Rate", value: kpi.conversionRate },
-    { title: "Avg Lead Score", value: kpi.avgLeadScore },
+    // { title: "Avg Lead Score", value: kpi.avgLeadScore },
     { title: "Consent Rate", value: kpi.consentRate },
   ];
 
+   // Book button handler
+  const handleBook = (id) => {
+    setLeads((prevLeads) =>
+      prevLeads.map((lead) =>
+        lead.id === id ? { ...lead, status: "Booked" } : lead
+      )
+    );
+  };
+
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-24">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
       {cards.map((card, idx) => (
         <div
           key={idx}

@@ -14,6 +14,7 @@ export default function WeeklyBriefCard() {
         skipEmptyLines: true,
         complete: (results) => {
           const data = results.data;
+          // huhi
 
           const totalLeads = data.length;
           const totalBookings = data.filter((row) => row.Appointment_Booked === "1").length;

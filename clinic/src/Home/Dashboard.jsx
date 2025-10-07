@@ -9,6 +9,7 @@ import NotificationsPanel from "./components/NotificationsPanel";
 import WeeklyBriefCard from "./components/WeeklyBriefCard";
 import CSVUploadPanel from "./components/CSVUploadPanel";
 import BookingImpactChart from "./components/BookingImpactChart";
+import WeeklyFeatureImportance from "./components/WeeklyFeatureImportance";
 
 export default function Dashboard() {
   const [showNotifications, setShowNotifications] = useState(false);
@@ -34,6 +35,7 @@ export default function Dashboard() {
         <div className="grid md:grid-cols-2 gap-6">
           <AIInsightsPanel />
           <SlotRecommendations />
+          <WeeklyFeatureImportance />
         </div>
         <WeeklyBriefCard />
       </div>

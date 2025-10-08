@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -9,79 +9,110 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import Papa from "papaparse";
 
-// Register chart elements
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-export default function BookingImpactChart() {
-  // Updated parameters affecting bookings
-  const parameters = [
-    // "Lead Source",
-    "Lead Score",
-    "Time of Day",
-    "Previous Booking Status",
-    "Frequency of Visits",
-    "Age Group",
-    "Occupation",
-  ];
+export default function BookingImpactChart({ filter }) {
+  const [data, setData] = useState(null);
 
-  // Mock influence values (0-1) for each parameter
-  const impactValues = [ 0.5, 0.2, 0.45, 0.3, 0.25, 0.15];
-
-  const data = {
-    labels: parameters,
-    datasets: [
-      {
-        label: "Impact on Booking Probability",
-        data: impactValues,
-        backgroundColor: [
-        //   "#3B82F6",
-          "#10B981",
-          "#F59E0B",
-          "#EF4444",
-          "#8B5CF6",
-          "#0EA5E9",
-          "#F87171",
-        ],
-        borderRadius: 5,
-      },
-    ],
+  const getFileName = () => {
+    const { year, month, week } = filter || {};
+    if (year === "2025" && month === "January") {
+      switch (week) {
+        case "Week 1": return "./weeklly/2025-01-01.csv";
+        case "Week 2": return "./weeklly/2025-01-08.csv";
+        case "Week 3": return "./weeklly/2025-01-15.csv";
+        case "Week 4": return "./weeklly/2025-01-22.csv";
+        default: return null;
+      }
+    }
+    return null;
   };
 
+  useEffect(() => {
+    const fileName = getFileName();
+    if (!fileName) return;
+
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`/${fileName}`);
+        const csvText = await response.text();
+
+        Papa.parse(csvText, {
+          header: true,
+          skipEmptyLines: true,
+          complete: (results) => {
+            const rows = results.data;
+
+            // ----- Choose parameters dynamically per week -----
+            let parameters = [];
+            if (filter.week === "Week 1") {
+              parameters = ["Lead Score", "Time of Day", "Previous Booking Status"];
+            } else if (filter.week === "Week 2") {
+              parameters = ["Lead Score", "Treatment_Interest", "Gender"];
+            } else if (filter.week === "Week 3") {
+              parameters = ["Lead Score", "Preferred_Slot", "Frequency of Visits"];
+            } else {
+              parameters = ["Lead Score", "Age Group", "Occupation"];
+            }
+
+            // Calculate mock impact values
+            const impactValues = parameters.map((param) => {
+              const total = rows.length;
+              const booked = rows.filter((r) => r.Appointment_Booked === "1").length;
+
+              // Random variation to simulate parameter influence
+              const randomFactor = Math.random() * 0.15;
+              return Math.min(1, booked / total + randomFactor);
+            });
+
+            setData({
+              labels: parameters,
+              datasets: [
+                {
+                  label: "Impact on Booking Probability",
+                  data: impactValues,
+                  backgroundColor: ["#10B981", "#F59E0B", "#EF4444", "#8B5CF6", "#0EA5E9", "#F87171"],
+                  borderRadius: 5,
+                },
+              ],
+            });
+          },
+        });
+      } catch (err) {
+        console.error("Error loading CSV:", err);
+      }
+    };
+
+    fetchData();
+  }, [filter]);
+
   const options = {
-    indexAxis: "y", // horizontal bars
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: { display: false },
-      title: {
-        display: true,
-        text: "Parameters Affecting Bookings",
-        font: { size: 18 },
-      },
+      title: { display: true, text: "Parameters Affecting Bookings", font: { size: 18 } },
       tooltip: {
         callbacks: {
-          label: function (context) {
-            const value = context.raw * 100;
-            return `${value.toFixed(1)}% impact`;
-          },
+          label: (context) => `${(context.raw * 100).toFixed(1)}% impact`,
         },
       },
     },
     scales: {
-      x: {
+      y: {
         min: 0,
         max: 1,
-        ticks: {
-          callback: function (val) {
-            return val * 100 + "%";
-          },
-        },
+        ticks: { callback: (val) => val * 100 + "%" },
       },
     },
   };
 
+  if (!data) return <p className="mt-6 text-gray-500">Loading chart...</p>;
+
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4 mt-6">
+    <div className="bg-white shadow-lg rounded-lg p-4 mt-6" style={{ height: "500px" }}>
       <Bar data={data} options={options} />
     </div>
   );

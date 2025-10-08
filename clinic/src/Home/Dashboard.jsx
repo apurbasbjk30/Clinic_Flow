@@ -32,11 +32,11 @@ export default function Dashboard() {
           <ChartsPanel filter={filter} />
           <LeadsTable searchQuery={searchQuery} filter={filter} />
         </div>
-        <BookingImpactChart />
+        <BookingImpactChart filter={filter} />
         <div className="grid md:grid-cols-2 gap-6">
           <AIInsightsPanel />
           <SlotRecommendations />
-          <WeeklyFeatureImportance />
+          {/* <WeeklyFeatureImportance /> */}
         </div>
         <WeeklyBriefCard />
       </div>

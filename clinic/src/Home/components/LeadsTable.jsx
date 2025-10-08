@@ -55,7 +55,7 @@ export default function LeadsTable({ searchQuery }) {
   );
 
   return (
-    <div className="mt-24 bg-white shadow-lg rounded-lg p-4">
+    <div className="mt-6 bg-white shadow-lg rounded-lg p-4">
       <h2 className="font-semibold mb-2">Lead's Potential Score</h2>
       {loading && <p>Processing leads...</p>}
 

@@ -1,37 +1,68 @@
 import React, { useState, useEffect } from "react";
 import Papa from "papaparse";
 
-export default function LeadsTable({ searchQuery }) {
+export default function LeadsTable({ searchQuery, filter }) {
   const [leads, setLeads] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  // 🧩 Function to decide which file to load based on the filter
+  const getFileName = () => {
+    const { year, month, week } = filter;
+
+    if (year === "2025" && month === "January") {
+      switch (week) {
+        case "Week 1":
+          return "./weeklly/2025-01-01.csv";
+        case "Week 2":
+          return "./weeklly/2025-01-08.csv";
+        case "Week 3":
+          return "./weeklly/2025-01-15.csv";
+        case "Week 4":
+          return "./weeklly/2025-01-23.csv";
+        default:
+          return null;
+      }
+    }
+
+    return null; // no file for other months yet
+  };
+
   useEffect(() => {
+    const fileName = getFileName();
+    if (!fileName) return;
+
     const fetchCSV = async () => {
-      setLoading(true);
-      const response = await fetch("../../../public/clinic_facebook_leads (1).csv");
-      const csvText = await response.text();
+      try {
+        setLoading(true);
+        const response = await fetch(`/${fileName}`);
 
-      Papa.parse(csvText, {
-        header: true,
-        skipEmptyLines: true,
-        complete: (results) => {
-          const processedLeads = results.data.map((lead) => {
-            const score = calculateLeadScore(lead);
-            return {
-              name: lead.Name || "N/A",
-              score,
-              status: lead.Appointment_Booked === "1" ? "Booked" : "Pending",
-            };
-          });
+        const csvText = await response.text();
 
-          setLeads(processedLeads);
-          setLoading(false);
-        },
-      });
+        Papa.parse(csvText, {
+          header: true,
+          skipEmptyLines: true,
+          complete: (results) => {
+            const processedLeads = results.data.map((lead) => {
+              const score = calculateLeadScore(lead);
+              return {
+                name: lead.Name || "N/A",
+                score,
+                status: lead.Appointment_Booked === "1" ? "Booked" : "Pending",
+              };
+            });
+
+            setLeads(processedLeads);
+            setLoading(false);
+          },
+        });
+      } catch (err) {
+        console.error("Error loading CSV:", err);
+        setLoading(false);
+      }
     };
 
     fetchCSV();
-  }, []);
+  }, [filter]);
 
   const calculateLeadScore = (lead) => {
     const engagement = parseFloat(lead.Engagement_Score) || 0;
@@ -49,7 +80,6 @@ export default function LeadsTable({ searchQuery }) {
     });
   };
 
-  // ✅ Filter by search
   const filteredLeads = leads.filter((lead) =>
     lead.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -57,10 +87,13 @@ export default function LeadsTable({ searchQuery }) {
   return (
     <div className="mt-6 bg-white shadow-lg rounded-lg p-4">
       <h2 className="font-semibold mb-2">Lead's Potential Score</h2>
+
       {loading && <p>Processing leads...</p>}
 
       {!loading && filteredLeads.length === 0 && (
-        <p className="text-gray-500">No leads found for "{searchQuery}"</p>
+        <p className="text-gray-500">
+          No leads found for "{searchQuery}" in {filter.month} {filter.week}.
+        </p>
       )}
 
       {filteredLeads.length > 0 && (
@@ -82,9 +115,7 @@ export default function LeadsTable({ searchQuery }) {
                     <td className="px-4 py-2">{lead.score.toFixed(2)}</td>
                     <td
                       className={`px-4 py-2 font-medium ${
-                        lead.status === "Booked"
-                          ? "text-green-600"
-                          : "text-yellow-600"
+                        lead.status === "Booked" ? "text-green-600" : "text-yellow-600"
                       }`}
                     >
                       {lead.status}

@@ -7,32 +7,30 @@ import AIInsightsPanel from "./components/AIInsightsPanel";
 import SlotRecommendations from "./components/SlotRecommendations";
 import NotificationsPanel from "./components/NotificationsPanel";
 import WeeklyBriefCard from "./components/WeeklyBriefCard";
-import CSVUploadPanel from "./components/CSVUploadPanel";
 import BookingImpactChart from "./components/BookingImpactChart";
 import WeeklyFeatureImportance from "./components/WeeklyFeatureImportance";
 
 export default function Dashboard() {
   const [showNotifications, setShowNotifications] = useState(false);
-
-  const toggleNotifications = () => {
-    setShowNotifications((prev) => !prev);
-  };
-
   const [searchQuery, setSearchQuery] = useState("");
+  const [filter, setFilter] = useState({ year: "2025", month: "January", week: "Week 1" });
+
+  const toggleNotifications = () => setShowNotifications((prev) => !prev);
+
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Navbar  onSearch={setSearchQuery}
-       toggleNotifications={toggleNotifications} />
+      <Navbar
+        onSearch={setSearchQuery}
+        toggleNotifications={toggleNotifications}
+        onFilterChange={setFilter}
+      />
 
-      {/* Render NotificationsPanel only if showNotifications is true */}
-     
       <div className="max-w-7xl mx-auto px-6 py-6 mt-24">
-         {showNotifications && <NotificationsPanel />}
-        <KPICards />
+        {showNotifications && <NotificationsPanel />}
+        <KPICards filter={filter} />
         <div className="grid md:grid-cols-2 gap-6">
-          <ChartsPanel />
-           <LeadsTable searchQuery={searchQuery} />
-          {/* <LeadsTable /> */}
+          <ChartsPanel filter={filter} />
+          <LeadsTable searchQuery={searchQuery} filter={filter} />
         </div>
         <BookingImpactChart />
         <div className="grid md:grid-cols-2 gap-6">

@@ -1,0 +1,201 @@
+Lead_ID,Name,Lead_Date,Ad_Campaign_Name,Ad_Set_Name,Ad_Spend,Impressions,Clicks,CTR (%),CPC,Form_Submit_Time,Lead_Source,Age,Gender,Location,Treatment_Interest,Preferred_Slot,Response_Time (mins),No_of_Followups,Engagement_Score,Consent_Status,Appointment_Booked,Appointment_Date,Created_Week
+LEAD_1000,Adam Smith,2025-01-30,SkinGlow_AdSet,Target_Women_25_45,758.79,1360,24,1.76,31.62,2025-01-30 01:27:00,Facebook,53,Other,Mumbai,Dental,Morning,193,5,78,True,1,2025-02-02 00:00:00,5
+LEAD_1001,Brandon Garcia MD,2025-01-31,SmileCare_Promo,Target_Women_25_45,150.77,630,159,25.24,0.95,2025-01-31 19:44:00,Facebook,29,Other,Bangalore,Skin,Evening,92,4,69,True,1,2025-02-05 00:00:00,5
+LEAD_1002,Steven Morrison,2025-01-25,Wellness_Boost,Target_Women_25_45,362.11,4617,98,2.12,3.7,2025-01-25 03:09:00,Facebook,64,Male,Ranchi,Dental,Morning,63,2,67,False,0,0,4
+LEAD_1003,Karl Romero,2025-01-29,DentalCare_2025,Retarget_OldLeads,984.91,2399,64,2.67,15.39,2025-01-29 21:37:00,Facebook,21,Male,Bangalore,Dental,Evening,135,5,90,True,0,0,5
+LEAD_1004,James Powers,2025-01-24,DentalCare_2025,GeneralAudience,827.56,2863,23,0.8,35.98,2025-01-24 08:28:00,Facebook,25,Male,Kolkata,Hair,Morning,13,2,92,True,1,2025-01-28 00:00:00,4
+LEAD_1005,Dana Vance,2025-01-30,SmileCare_Promo,GeneralAudience,332.9,534,90,16.85,3.7,2025-01-30 11:42:00,Facebook,35,Female,Mumbai,Dental,Morning,108,4,41,True,1,2025-02-03 00:00:00,5
+LEAD_1006,Justin Wilson,2025-01-25,HairRevive_Offer,Target_Women_25_45,933.99,661,199,30.11,4.69,2025-01-25 11:59:00,Facebook,62,Male,Kolkata,Skin,Afternoon,99,4,96,False,0,0,4
+LEAD_1007,Mrs. Bridget Pope DDS,2025-01-25,HairRevive_Offer,Retarget_OldLeads,628.08,1378,62,4.5,10.13,2025-01-25 01:04:00,Facebook,42,Female,Ranchi,Wellness,Evening,221,4,99,True,1,2025-01-30 00:00:00,4
+LEAD_1008,Lisa Adams,2025-01-30,SkinGlow_AdSet,GeneralAudience,455.39,3068,97,3.16,4.69,2025-01-30 04:48:00,Facebook,22,Male,Bangalore,Hair,Evening,140,3,90,True,0,0,5
+LEAD_1009,Monique Ross,2025-01-25,DentalCare_2025,Youngsters_Fitness,923.46,2778,50,1.8,18.47,2025-01-25 13:24:00,Facebook,52,Other,Delhi,Skin,Morning,205,4,73,True,1,2025-01-31 00:00:00,4
+LEAD_1010,Melissa Robinson,2025-01-27,SmileCare_Promo,Youngsters_Fitness,524.99,3273,44,1.34,11.93,2025-01-27 14:30:00,Facebook,44,Male,Delhi,Skin,Afternoon,105,3,40,True,1,2025-02-02 00:00:00,5
+LEAD_1011,Peter Webster,2025-01-24,HairRevive_Offer,GeneralAudience,199.8,706,24,3.4,8.33,2025-01-24 09:23:00,Facebook,49,Other,Mumbai,Dental,Afternoon,128,5,90,True,0,0,4
+LEAD_1012,Brandy Clay,2025-01-27,HairRevive_Offer,Men_30plus,643.98,2257,160,7.09,4.02,2025-01-27 21:06:00,Facebook,39,Other,Mumbai,Skin,Evening,147,3,68,True,1,2025-01-30 00:00:00,5
+LEAD_1013,Tricia Haynes,2025-01-27,SmileCare_Promo,Retarget_OldLeads,827.31,3125,179,5.73,4.62,2025-01-27 22:34:00,Facebook,45,Other,Delhi,Dental,Afternoon,189,5,45,True,1,2025-01-31 00:00:00,5
+LEAD_1014,Theresa Scott,2025-01-24,Wellness_Boost,Youngsters_Fitness,199.05,3802,199,5.23,1.0,2025-01-24 23:02:00,Facebook,23,Other,Bangalore,Dental,Evening,125,3,96,True,0,0,4
+LEAD_1015,Patricia Webster,2025-01-31,HairRevive_Offer,Target_Women_25_45,723.19,4913,174,3.54,4.16,2025-01-31 18:56:00,Facebook,29,Male,Ranchi,Hair,Afternoon,238,4,63,True,1,2025-02-01 00:00:00,5
+LEAD_1016,Roberta Holt,2025-01-29,HairRevive_Offer,Target_Women_25_45,370.79,3957,140,3.54,2.65,2025-01-29 14:14:00,Facebook,54,Male,Bangalore,Hair,Morning,117,1,98,True,0,0,5
+LEAD_1017,Christopher Parrish,2025-01-31,Wellness_Boost,GeneralAudience,230.41,3974,135,3.4,1.71,2025-01-31 03:22:00,Facebook,34,Other,Kolkata,Dental,Afternoon,176,2,71,True,0,0,5
+LEAD_1018,Edward Mason,2025-01-30,SmileCare_Promo,Men_30plus,523.27,4889,33,0.67,15.86,2025-01-30 22:29:00,Facebook,33,Other,Bangalore,Hair,Evening,102,3,87,True,1,2025-02-02 00:00:00,5
+LEAD_1019,Christine Miller,2025-01-28,DentalCare_2025,GeneralAudience,393.36,2294,157,6.84,2.51,2025-01-28 08:08:00,Facebook,50,Other,Kolkata,Hair,Morning,168,3,65,True,1,2025-02-01 00:00:00,5
+LEAD_1020,Jennifer Bond,2025-01-31,SmileCare_Promo,Retarget_OldLeads,223.77,2885,113,3.92,1.98,2025-01-31 22:01:00,Facebook,52,Female,Ranchi,Skin,Morning,224,1,64,True,0,0,5
+LEAD_1021,Caitlin Smith,2025-01-30,SmileCare_Promo,Men_30plus,334.75,1123,69,6.14,4.85,2025-01-30 00:08:00,Facebook,58,Other,Kolkata,Skin,Afternoon,133,4,44,True,0,0,5
+LEAD_1022,Susan Reynolds,2025-01-26,Wellness_Boost,Retarget_OldLeads,862.0,2182,57,2.61,15.12,2025-01-26 01:43:00,Facebook,37,Female,Bangalore,Hair,Evening,152,1,63,True,0,0,4
+LEAD_1023,Amber Villanueva,2025-01-29,SkinGlow_AdSet,Target_Women_25_45,976.3,3683,108,2.93,9.04,2025-01-29 02:40:00,Facebook,21,Other,Bangalore,Hair,Evening,150,2,41,True,0,0,5
+LEAD_1024,Luke Walsh,2025-01-24,HairRevive_Offer,Target_Women_25_45,260.94,4993,30,0.6,8.7,2025-01-24 15:54:00,Facebook,39,Female,Kolkata,Dental,Afternoon,132,3,56,True,0,0,4
+LEAD_1025,Cheryl Hernandez,2025-01-30,SkinGlow_AdSet,Youngsters_Fitness,975.71,1545,167,10.81,5.84,2025-01-30 21:40:00,Facebook,47,Other,Delhi,Skin,Evening,113,3,93,True,0,0,5
+LEAD_1026,Michelle Moore,2025-01-24,HairRevive_Offer,Retarget_OldLeads,549.27,1459,70,4.8,7.85,2025-01-24 02:37:00,Facebook,46,Other,Delhi,Dental,Afternoon,8,3,88,True,0,0,4
+LEAD_1027,Jacqueline Foster,2025-01-29,SmileCare_Promo,Retarget_OldLeads,433.14,3944,15,0.38,28.88,2025-01-29 10:06:00,Facebook,52,Other,Ranchi,Hair,Afternoon,237,5,63,True,0,0,5
+LEAD_1028,Michelle Rowe,2025-01-27,SkinGlow_AdSet,Target_Women_25_45,866.02,1639,169,10.31,5.12,2025-01-27 22:26:00,Facebook,57,Female,Mumbai,Dental,Morning,71,2,64,True,0,0,5
+LEAD_1029,Ashley Baxter,2025-01-29,SmileCare_Promo,Retarget_OldLeads,653.51,4363,123,2.82,5.31,2025-01-29 23:36:00,Facebook,60,Male,Ranchi,Wellness,Morning,90,2,66,True,1,2025-01-30 00:00:00,5
+LEAD_1030,Denise Wright,2025-01-29,DentalCare_2025,Men_30plus,829.1,3306,35,1.06,23.69,2025-01-29 11:24:00,Facebook,37,Male,Kolkata,Dental,Afternoon,157,5,99,True,0,0,5
+LEAD_1031,Daniel Johnson,2025-01-24,DentalCare_2025,Retarget_OldLeads,145.69,4347,153,3.52,0.95,2025-01-24 14:13:00,Facebook,42,Female,Delhi,Dental,Evening,119,4,73,True,0,0,4
+LEAD_1032,Christy Poole,2025-01-25,HairRevive_Offer,GeneralAudience,357.89,1074,199,18.53,1.8,2025-01-25 16:42:00,Facebook,54,Other,Mumbai,Wellness,Evening,62,2,61,True,1,2025-01-31 00:00:00,4
+LEAD_1033,Jeffrey Johnson,2025-01-24,Wellness_Boost,Target_Women_25_45,294.24,3624,69,1.9,4.26,2025-01-24 00:46:00,Facebook,52,Male,Delhi,Skin,Afternoon,9,4,45,True,0,0,4
+LEAD_1034,Jenna Douglas,2025-01-30,SkinGlow_AdSet,Retarget_OldLeads,564.67,4864,123,2.53,4.59,2025-01-30 18:01:00,Facebook,43,Other,Delhi,Dental,Morning,162,3,56,True,0,0,5
+LEAD_1035,John Bowen,2025-01-28,SkinGlow_AdSet,Target_Women_25_45,852.38,616,71,11.53,12.01,2025-01-28 13:21:00,Facebook,49,Male,Ranchi,Skin,Afternoon,141,4,92,True,0,0,5
+LEAD_1036,Kevin Fitzgerald,2025-01-29,SkinGlow_AdSet,Retarget_OldLeads,694.18,1059,98,9.25,7.08,2025-01-29 09:40:00,Facebook,39,Male,Mumbai,Wellness,Morning,121,1,55,True,0,0,5
+LEAD_1037,Cole Gilbert,2025-01-28,DentalCare_2025,Men_30plus,609.43,2794,85,3.04,7.17,2025-01-28 17:50:00,Facebook,47,Other,Bangalore,Wellness,Morning,183,5,61,True,1,2025-02-02 00:00:00,5
+LEAD_1038,Miss Megan Barrera DVM,2025-01-29,Wellness_Boost,GeneralAudience,188.05,3559,153,4.3,1.23,2025-01-29 05:56:00,Facebook,40,Male,Ranchi,Skin,Evening,180,5,78,True,0,0,5
+LEAD_1039,Billy Wu,2025-01-25,Wellness_Boost,Youngsters_Fitness,437.15,3349,189,5.64,2.31,2025-01-25 08:35:00,Facebook,33,Female,Kolkata,Wellness,Evening,151,2,71,True,0,0,4
+LEAD_1040,Mallory Olson,2025-01-31,SkinGlow_AdSet,Target_Women_25_45,123.86,835,11,1.32,11.26,2025-01-31 06:19:00,Facebook,50,Male,Kolkata,Hair,Morning,132,3,59,True,0,0,5
+LEAD_1041,Dana Floyd,2025-01-24,SmileCare_Promo,Men_30plus,947.32,3238,180,5.56,5.26,2025-01-24 06:36:00,Facebook,29,Male,Bangalore,Wellness,Morning,71,1,72,True,1,2025-01-29 00:00:00,4
+LEAD_1042,Kimberly Brewer,2025-01-30,Wellness_Boost,Men_30plus,135.07,3873,139,3.59,0.97,2025-01-30 17:01:00,Facebook,51,Female,Kolkata,Dental,Morning,39,1,65,True,0,0,5
+LEAD_1043,Brian Grant,2025-01-26,Wellness_Boost,Retarget_OldLeads,206.35,1116,144,12.9,1.43,2025-01-26 21:40:00,Facebook,53,Male,Ranchi,Skin,Morning,118,5,50,True,0,0,4
+LEAD_1044,Curtis Davis,2025-01-25,SmileCare_Promo,Men_30plus,826.15,3004,161,5.36,5.13,2025-01-25 00:36:00,Facebook,29,Female,Kolkata,Wellness,Morning,181,3,87,True,1,2025-01-31 00:00:00,4
+LEAD_1045,Paul May,2025-01-24,Wellness_Boost,Target_Women_25_45,765.92,4266,22,0.52,34.81,2025-01-24 12:08:00,Facebook,39,Male,Kolkata,Skin,Afternoon,103,1,69,True,0,0,4
+LEAD_1046,Richard Harper,2025-01-28,HairRevive_Offer,GeneralAudience,450.28,1198,28,2.34,16.08,2025-01-28 11:57:00,Facebook,48,Female,Kolkata,Wellness,Morning,144,5,80,True,1,2025-02-01 00:00:00,5
+LEAD_1047,Mary Sweeney,2025-01-31,SmileCare_Promo,Youngsters_Fitness,174.96,4077,120,2.94,1.46,2025-01-31 19:34:00,Facebook,33,Male,Ranchi,Skin,Evening,73,3,51,True,0,0,5
+LEAD_1048,Jennifer Barnett,2025-01-24,HairRevive_Offer,Target_Women_25_45,937.84,1562,118,7.55,7.95,2025-01-24 10:57:00,Facebook,64,Male,Bangalore,Wellness,Evening,190,2,44,True,0,0,4
+LEAD_1049,Keith May,2025-01-27,DentalCare_2025,Men_30plus,191.01,1453,154,10.6,1.24,2025-01-27 10:33:00,Facebook,19,Male,Bangalore,Skin,Morning,11,5,79,True,0,0,5
+LEAD_1050,Jeffrey Odonnell,2025-01-28,SkinGlow_AdSet,Retarget_OldLeads,987.98,3736,175,4.68,5.65,2025-01-28 03:36:00,Facebook,62,Male,Delhi,Wellness,Morning,113,1,61,True,0,0,5
+LEAD_1051,Jonathan Gilbert,2025-01-27,DentalCare_2025,Men_30plus,737.36,2327,79,3.39,9.33,2025-01-27 00:38:00,Facebook,20,Other,Bangalore,Skin,Evening,23,5,83,True,0,0,5
+LEAD_1052,Jonathan Kidd,2025-01-28,SkinGlow_AdSet,GeneralAudience,150.67,1743,135,7.75,1.12,2025-01-28 05:47:00,Facebook,42,Other,Bangalore,Hair,Afternoon,224,5,80,True,0,0,5
+LEAD_1053,Catherine Stevenson,2025-01-31,SmileCare_Promo,Youngsters_Fitness,492.7,1428,175,12.25,2.82,2025-01-31 13:34:00,Facebook,38,Male,Mumbai,Wellness,Morning,62,4,84,False,0,0,5
+LEAD_1054,Sara Kennedy,2025-01-31,HairRevive_Offer,GeneralAudience,598.47,3433,173,5.04,3.46,2025-01-31 23:16:00,Facebook,20,Female,Ranchi,Skin,Afternoon,24,1,57,True,1,2025-02-01 00:00:00,5
+LEAD_1055,Teresa Gibson,2025-01-31,DentalCare_2025,Retarget_OldLeads,923.73,970,194,20.0,4.76,2025-01-31 11:15:00,Facebook,43,Male,Ranchi,Dental,Evening,78,4,63,True,1,2025-02-04 00:00:00,5
+LEAD_1056,Julie Fletcher,2025-01-31,HairRevive_Offer,Men_30plus,625.29,3245,69,2.13,9.06,2025-01-31 15:58:00,Facebook,34,Female,Ranchi,Dental,Afternoon,224,5,80,True,0,0,5
+LEAD_1057,Dennis Ferrell,2025-01-24,HairRevive_Offer,Men_30plus,219.87,3008,166,5.52,1.32,2025-01-24 07:29:00,Facebook,27,Female,Bangalore,Hair,Evening,39,5,45,True,0,0,4
+LEAD_1058,Roger Mcfarland,2025-01-31,DentalCare_2025,Target_Women_25_45,248.35,1297,118,9.1,2.1,2025-01-31 02:56:00,Facebook,28,Other,Bangalore,Hair,Evening,37,1,57,False,0,0,5
+LEAD_1059,Matthew Jimenez,2025-01-28,SkinGlow_AdSet,Men_30plus,846.25,4658,95,2.04,8.91,2025-01-28 06:24:00,Facebook,38,Female,Ranchi,Skin,Evening,181,5,72,True,0,0,5
+LEAD_1060,Margaret Johnson,2025-01-31,DentalCare_2025,Men_30plus,774.92,2500,104,4.16,7.45,2025-01-31 01:22:00,Facebook,34,Female,Mumbai,Dental,Evening,7,5,62,True,0,0,5
+LEAD_1061,Samantha Christensen,2025-01-28,HairRevive_Offer,Men_30plus,347.26,2548,60,2.35,5.79,2025-01-28 04:09:00,Facebook,51,Other,Mumbai,Wellness,Afternoon,8,1,88,True,1,2025-01-30 00:00:00,5
+LEAD_1062,Margaret Patton,2025-01-29,SkinGlow_AdSet,Target_Women_25_45,568.15,2665,12,0.45,47.35,2025-01-29 16:29:00,Facebook,47,Other,Kolkata,Hair,Morning,16,1,93,False,0,0,5
+LEAD_1063,Heather Fields,2025-01-26,SkinGlow_AdSet,Youngsters_Fitness,220.61,2348,154,6.56,1.43,2025-01-26 01:42:00,Facebook,55,Male,Mumbai,Dental,Evening,51,5,60,True,0,0,4
+LEAD_1064,Mary Harris,2025-01-31,Wellness_Boost,Retarget_OldLeads,672.98,1829,107,5.85,6.29,2025-01-31 16:23:00,Facebook,32,Other,Kolkata,Skin,Morning,83,3,90,True,1,2025-02-06 00:00:00,5
+LEAD_1065,Patrick Martinez,2025-01-27,SkinGlow_AdSet,Men_30plus,727.88,3677,60,1.63,12.13,2025-01-27 16:23:00,Facebook,22,Other,Ranchi,Hair,Evening,33,4,49,True,0,0,5
+LEAD_1066,Katherine Harris,2025-01-25,DentalCare_2025,Men_30plus,670.06,4800,135,2.81,4.96,2025-01-25 23:17:00,Facebook,33,Female,Delhi,Skin,Afternoon,207,3,86,True,1,2025-01-28 00:00:00,4
+LEAD_1067,Raven Cain,2025-01-31,HairRevive_Offer,Target_Women_25_45,726.85,1399,113,8.08,6.43,2025-01-31 01:00:00,Facebook,36,Female,Delhi,Dental,Evening,29,3,71,True,0,0,5
+LEAD_1068,Lynn Wade,2025-01-28,SkinGlow_AdSet,Youngsters_Fitness,179.83,4400,31,0.7,5.8,2025-01-28 18:21:00,Facebook,43,Other,Kolkata,Dental,Morning,5,5,80,True,0,0,5
+LEAD_1069,Melissa Bryant,2025-01-28,SmileCare_Promo,Men_30plus,665.11,2796,56,2.0,11.88,2025-01-28 00:07:00,Facebook,52,Female,Ranchi,Dental,Evening,60,3,87,True,1,2025-01-29 00:00:00,5
+LEAD_1070,Charles Russo,2025-01-28,HairRevive_Offer,GeneralAudience,433.42,3266,56,1.71,7.74,2025-01-28 06:04:00,Facebook,43,Other,Delhi,Hair,Morning,218,2,67,True,0,0,5
+LEAD_1071,John Lozano,2025-01-29,SkinGlow_AdSet,GeneralAudience,560.51,2146,160,7.46,3.5,2025-01-29 08:04:00,Facebook,45,Male,Kolkata,Dental,Morning,22,2,77,True,1,2025-01-30 00:00:00,5
+LEAD_1072,Daniel Whitaker,2025-01-25,Wellness_Boost,Youngsters_Fitness,856.64,1562,194,12.42,4.42,2025-01-25 23:37:00,Facebook,20,Female,Delhi,Dental,Morning,90,2,83,True,1,2025-01-26 00:00:00,4
+LEAD_1073,Stephanie Bush,2025-01-24,SmileCare_Promo,GeneralAudience,178.23,2656,155,5.84,1.15,2025-01-24 09:54:00,Facebook,59,Female,Mumbai,Skin,Afternoon,115,2,86,True,0,0,4
+LEAD_1074,Ruth Gilbert,2025-01-24,HairRevive_Offer,Retarget_OldLeads,909.68,3160,15,0.47,60.65,2025-01-24 23:20:00,Facebook,50,Female,Bangalore,Hair,Morning,68,2,98,True,0,0,4
+LEAD_1075,Michael Thomas,2025-01-28,SkinGlow_AdSet,Youngsters_Fitness,237.57,3209,30,0.93,7.92,2025-01-28 12:38:00,Facebook,20,Male,Bangalore,Hair,Morning,116,4,69,True,1,2025-01-29 00:00:00,5
+LEAD_1076,Karen Andrews,2025-01-26,SkinGlow_AdSet,Retarget_OldLeads,727.27,3090,49,1.59,14.84,2025-01-26 00:03:00,Facebook,32,Female,Mumbai,Hair,Afternoon,156,2,59,False,0,0,4
+LEAD_1077,Todd Guzman,2025-01-29,DentalCare_2025,Retarget_OldLeads,541.67,617,122,19.77,4.44,2025-01-29 17:29:00,Facebook,62,Male,Kolkata,Dental,Afternoon,234,3,96,True,0,0,5
+LEAD_1078,Aaron May,2025-01-27,SkinGlow_AdSet,GeneralAudience,482.89,1641,77,4.69,6.27,2025-01-27 10:53:00,Facebook,55,Male,Bangalore,Dental,Afternoon,229,4,88,True,0,0,5
+LEAD_1079,Evan Ross,2025-01-28,Wellness_Boost,Target_Women_25_45,938.81,2417,148,6.12,6.34,2025-01-28 04:20:00,Facebook,40,Other,Mumbai,Hair,Evening,81,3,42,True,1,2025-01-30 00:00:00,5
+LEAD_1080,Jessica King,2025-01-25,SkinGlow_AdSet,Youngsters_Fitness,390.12,2719,139,5.11,2.81,2025-01-25 15:10:00,Facebook,41,Other,Mumbai,Wellness,Afternoon,134,4,40,True,1,2025-01-26 00:00:00,4
+LEAD_1081,Beth Smith,2025-01-29,Wellness_Boost,Youngsters_Fitness,413.98,2538,172,6.78,2.41,2025-01-29 05:33:00,Facebook,28,Other,Delhi,Dental,Afternoon,53,5,99,False,0,0,5
+LEAD_1082,Jennifer Herrera,2025-01-24,Wellness_Boost,Men_30plus,933.8,3135,44,1.4,21.22,2025-01-24 04:29:00,Facebook,47,Other,Bangalore,Hair,Afternoon,68,4,68,True,0,0,4
+LEAD_1083,Shane Payne,2025-01-26,DentalCare_2025,Target_Women_25_45,670.38,3398,132,3.88,5.08,2025-01-26 04:55:00,Facebook,25,Female,Mumbai,Dental,Afternoon,66,4,64,True,0,0,4
+LEAD_1084,Joanna Alvarado,2025-01-30,DentalCare_2025,Retarget_OldLeads,516.41,4097,41,1.0,12.6,2025-01-30 02:24:00,Facebook,50,Other,Mumbai,Wellness,Afternoon,170,1,62,True,0,0,5
+LEAD_1085,Jennifer Johnson,2025-01-30,Wellness_Boost,Men_30plus,915.82,4533,62,1.37,14.77,2025-01-30 09:13:00,Facebook,32,Other,Kolkata,Dental,Evening,183,3,45,True,0,0,5
+LEAD_1086,Michelle Brown,2025-01-30,SkinGlow_AdSet,Youngsters_Fitness,809.74,2535,164,6.47,4.94,2025-01-30 04:48:00,Facebook,21,Other,Bangalore,Hair,Morning,42,1,72,True,0,0,5
+LEAD_1087,Kevin Chen,2025-01-29,SmileCare_Promo,Youngsters_Fitness,544.58,2357,19,0.81,28.66,2025-01-29 03:35:00,Facebook,32,Male,Delhi,Dental,Morning,78,1,93,True,1,2025-02-02 00:00:00,5
+LEAD_1088,Jennifer Orr,2025-01-28,SkinGlow_AdSet,Men_30plus,537.72,4219,14,0.33,38.41,2025-01-28 12:34:00,Facebook,53,Female,Bangalore,Skin,Afternoon,72,4,84,True,0,0,5
+LEAD_1089,Cody Williams,2025-01-27,Wellness_Boost,Retarget_OldLeads,639.13,1293,52,4.02,12.29,2025-01-27 05:01:00,Facebook,60,Male,Kolkata,Wellness,Afternoon,152,3,49,True,1,2025-01-29 00:00:00,5
+LEAD_1090,Tina Johnson,2025-01-27,SmileCare_Promo,Men_30plus,225.2,2765,150,5.42,1.5,2025-01-27 16:43:00,Facebook,53,Other,Ranchi,Skin,Afternoon,214,1,72,True,0,0,5
+LEAD_1091,Stephanie Mason,2025-01-31,SmileCare_Promo,Men_30plus,736.51,3435,46,1.34,16.01,2025-01-31 17:32:00,Facebook,31,Other,Bangalore,Wellness,Morning,110,1,67,True,1,2025-02-03 00:00:00,5
+LEAD_1092,Stacey Thompson,2025-01-31,DentalCare_2025,Men_30plus,505.76,3868,20,0.52,25.29,2025-01-31 17:04:00,Facebook,57,Male,Kolkata,Dental,Afternoon,50,5,60,True,1,2025-02-01 00:00:00,5
+LEAD_1093,Ryan Holt,2025-01-30,DentalCare_2025,Retarget_OldLeads,149.29,3208,184,5.74,0.81,2025-01-30 09:34:00,Facebook,42,Other,Mumbai,Wellness,Evening,141,2,91,True,0,0,5
+LEAD_1094,Joanna Miller,2025-01-25,DentalCare_2025,GeneralAudience,411.71,2622,47,1.79,8.76,2025-01-25 15:54:00,Facebook,61,Other,Kolkata,Dental,Evening,214,3,73,True,0,0,4
+LEAD_1095,Sheila Jones,2025-01-26,Wellness_Boost,GeneralAudience,619.87,1705,161,9.44,3.85,2025-01-26 16:42:00,Facebook,39,Female,Delhi,Hair,Evening,184,5,63,True,0,0,4
+LEAD_1096,John Giles,2025-01-25,Wellness_Boost,Men_30plus,697.18,2703,123,4.55,5.67,2025-01-25 05:41:00,Facebook,45,Female,Kolkata,Skin,Evening,203,1,59,True,0,0,4
+LEAD_1097,Gregory Williams,2025-01-30,HairRevive_Offer,Men_30plus,551.98,2224,113,5.08,4.88,2025-01-30 22:21:00,Facebook,49,Female,Mumbai,Hair,Evening,5,5,69,True,1,2025-02-02 00:00:00,5
+LEAD_1098,Daniel Carey,2025-01-29,SkinGlow_AdSet,Men_30plus,132.89,2832,58,2.05,2.29,2025-01-29 16:49:00,Facebook,19,Male,Delhi,Wellness,Evening,34,3,57,True,0,0,5
+LEAD_1099,Todd Williams,2025-01-29,SmileCare_Promo,Men_30plus,788.82,2661,175,6.58,4.51,2025-01-29 13:19:00,Facebook,27,Male,Kolkata,Wellness,Afternoon,136,1,47,True,0,0,5
+LEAD_1100,John Wade,2025-01-25,DentalCare_2025,GeneralAudience,467.86,2401,171,7.12,2.74,2025-01-25 13:52:00,Facebook,20,Female,Ranchi,Dental,Afternoon,91,4,71,True,0,0,4
+LEAD_1101,Lisa Herrera MD,2025-01-31,Wellness_Boost,Retarget_OldLeads,193.7,2990,81,2.71,2.39,2025-01-31 01:35:00,Facebook,41,Other,Ranchi,Wellness,Afternoon,233,3,90,True,1,2025-02-02 00:00:00,5
+LEAD_1102,Marie Dean,2025-01-29,SkinGlow_AdSet,Youngsters_Fitness,826.17,1811,129,7.12,6.4,2025-01-29 00:06:00,Facebook,27,Female,Kolkata,Wellness,Evening,148,4,91,True,1,2025-01-31 00:00:00,5
+LEAD_1103,Timothy Hamilton,2025-01-30,DentalCare_2025,Retarget_OldLeads,123.88,2698,94,3.48,1.32,2025-01-30 13:34:00,Facebook,22,Male,Kolkata,Dental,Afternoon,129,3,75,True,0,0,5
+LEAD_1104,Robert Phillips,2025-01-27,Wellness_Boost,GeneralAudience,426.75,4094,139,3.4,3.07,2025-01-27 15:04:00,Facebook,51,Male,Kolkata,Hair,Evening,123,4,59,True,0,0,5
+LEAD_1105,Jessica Wong,2025-01-28,Wellness_Boost,Men_30plus,801.78,4077,95,2.33,8.44,2025-01-28 02:07:00,Facebook,49,Female,Delhi,Skin,Afternoon,85,2,69,True,0,0,5
+LEAD_1106,Stacy Warren DDS,2025-01-24,DentalCare_2025,Retarget_OldLeads,561.21,4453,124,2.78,4.53,2025-01-24 20:58:00,Facebook,63,Other,Ranchi,Skin,Evening,13,2,84,True,1,2025-01-30 00:00:00,4
+LEAD_1107,Heidi Porter,2025-01-27,Wellness_Boost,Men_30plus,254.51,941,38,4.04,6.7,2025-01-27 00:41:00,Facebook,53,Female,Delhi,Skin,Afternoon,219,5,50,True,0,0,5
+LEAD_1108,Joseph Mora,2025-01-24,Wellness_Boost,Youngsters_Fitness,464.72,2581,26,1.01,17.87,2025-01-24 00:26:00,Facebook,48,Male,Kolkata,Hair,Afternoon,234,2,51,True,1,2025-01-29 00:00:00,4
+LEAD_1109,Sean Schmitt,2025-01-29,Wellness_Boost,Youngsters_Fitness,640.47,4763,107,2.25,5.99,2025-01-29 11:41:00,Facebook,63,Female,Mumbai,Skin,Afternoon,57,2,84,True,0,0,5
+LEAD_1110,Brendan Moore,2025-01-31,SkinGlow_AdSet,Retarget_OldLeads,764.23,4725,63,1.33,12.13,2025-01-31 21:59:00,Facebook,28,Male,Mumbai,Dental,Evening,55,5,75,True,1,2025-02-03 00:00:00,5
+LEAD_1111,Rebecca Moreno,2025-01-31,SkinGlow_AdSet,Target_Women_25_45,367.41,1636,196,11.98,1.87,2025-01-31 01:08:00,Facebook,50,Male,Delhi,Dental,Morning,231,2,94,True,0,0,5
+LEAD_1112,Patricia Silva,2025-01-25,DentalCare_2025,Men_30plus,245.81,1250,157,12.56,1.57,2025-01-25 01:12:00,Facebook,26,Male,Delhi,Wellness,Evening,239,1,98,True,1,2025-01-27 00:00:00,4
+LEAD_1113,Michael Johnson,2025-01-31,SkinGlow_AdSet,Retarget_OldLeads,719.56,1740,70,4.02,10.28,2025-01-31 02:51:00,Facebook,47,Male,Kolkata,Hair,Afternoon,46,1,78,True,1,2025-02-04 00:00:00,5
+LEAD_1114,Adam Hicks,2025-01-29,SmileCare_Promo,Retarget_OldLeads,182.42,2822,110,3.9,1.66,2025-01-29 00:11:00,Facebook,33,Other,Ranchi,Dental,Afternoon,53,5,56,False,0,0,5
+LEAD_1115,Kristin Larsen,2025-01-31,SkinGlow_AdSet,Retarget_OldLeads,675.05,838,17,2.03,39.71,2025-01-31 07:45:00,Facebook,42,Male,Mumbai,Wellness,Afternoon,85,5,93,True,0,0,5
+LEAD_1116,Paula Schroeder,2025-01-27,SmileCare_Promo,Target_Women_25_45,988.9,4226,68,1.61,14.54,2025-01-27 06:40:00,Facebook,40,Other,Delhi,Skin,Evening,113,2,86,True,0,0,5
+LEAD_1117,Miss Jordan Robertson DVM,2025-01-25,HairRevive_Offer,Retarget_OldLeads,130.55,3657,144,3.94,0.91,2025-01-25 12:06:00,Facebook,46,Male,Bangalore,Skin,Afternoon,121,1,90,True,0,0,4
+LEAD_1118,David Gonzales,2025-01-25,DentalCare_2025,GeneralAudience,860.09,3794,125,3.29,6.88,2025-01-25 19:35:00,Facebook,52,Other,Mumbai,Skin,Evening,150,3,81,True,0,0,4
+LEAD_1119,Aaron York,2025-01-27,HairRevive_Offer,Target_Women_25_45,577.24,630,46,7.3,12.55,2025-01-27 22:52:00,Facebook,39,Female,Kolkata,Skin,Afternoon,222,4,78,True,0,0,5
+LEAD_1120,Brian Lopez,2025-01-24,HairRevive_Offer,GeneralAudience,897.38,3269,170,5.2,5.28,2025-01-24 06:53:00,Facebook,30,Other,Delhi,Wellness,Morning,174,4,41,True,0,0,4
+LEAD_1121,Stephanie Gibson,2025-01-28,DentalCare_2025,Youngsters_Fitness,998.14,4310,132,3.06,7.56,2025-01-28 04:31:00,Facebook,61,Other,Bangalore,Wellness,Afternoon,33,1,68,True,0,0,5
+LEAD_1122,Matthew Guerrero,2025-01-30,Wellness_Boost,Retarget_OldLeads,182.53,2924,19,0.65,9.61,2025-01-30 19:25:00,Facebook,47,Female,Mumbai,Dental,Morning,107,4,44,True,1,2025-02-04 00:00:00,5
+LEAD_1123,Joseph Walter,2025-01-25,HairRevive_Offer,GeneralAudience,630.2,645,199,30.85,3.17,2025-01-25 09:44:00,Facebook,32,Male,Kolkata,Wellness,Afternoon,180,1,92,False,0,0,4
+LEAD_1124,Lawrence Yang,2025-01-24,SkinGlow_AdSet,GeneralAudience,960.77,1463,149,10.18,6.45,2025-01-24 22:22:00,Facebook,63,Female,Delhi,Wellness,Morning,41,5,76,True,0,0,4
+LEAD_1125,Robert Durham,2025-01-31,HairRevive_Offer,Youngsters_Fitness,652.07,510,71,13.92,9.18,2025-01-31 22:13:00,Facebook,62,Female,Mumbai,Hair,Evening,157,4,43,True,0,0,5
+LEAD_1126,Jodi Terrell,2025-01-29,SkinGlow_AdSet,Retarget_OldLeads,258.88,3901,116,2.97,2.23,2025-01-29 00:53:00,Facebook,64,Male,Ranchi,Dental,Evening,222,1,88,False,0,0,5
+LEAD_1127,Katie Smith,2025-01-30,Wellness_Boost,GeneralAudience,934.98,3236,18,0.56,51.94,2025-01-30 01:01:00,Facebook,34,Other,Delhi,Wellness,Evening,126,1,98,True,0,0,5
+LEAD_1128,Phillip Williams,2025-01-31,Wellness_Boost,GeneralAudience,517.04,502,169,33.67,3.06,2025-01-31 23:00:00,Facebook,51,Male,Ranchi,Hair,Morning,17,5,86,True,0,0,5
+LEAD_1129,Dylan Owens III,2025-01-26,Wellness_Boost,Men_30plus,339.04,2140,193,9.02,1.76,2025-01-26 02:49:00,Facebook,26,Female,Bangalore,Hair,Afternoon,224,5,48,True,0,0,4
+LEAD_1130,Brian Berry,2025-01-30,DentalCare_2025,Retarget_OldLeads,595.77,4635,34,0.73,17.52,2025-01-30 19:59:00,Facebook,43,Female,Kolkata,Hair,Afternoon,191,2,63,True,1,2025-02-02 00:00:00,5
+LEAD_1131,John Buckley,2025-01-25,Wellness_Boost,Youngsters_Fitness,198.52,536,69,12.87,2.88,2025-01-25 03:43:00,Facebook,46,Female,Mumbai,Dental,Morning,32,5,52,True,0,0,4
+LEAD_1132,Alexis Scott PhD,2025-01-26,SmileCare_Promo,Youngsters_Fitness,413.03,3245,76,2.34,5.43,2025-01-26 19:30:00,Facebook,33,Male,Bangalore,Dental,Morning,102,3,52,True,0,0,4
+LEAD_1133,Brian Brooks,2025-01-31,SmileCare_Promo,GeneralAudience,241.61,2639,106,4.02,2.28,2025-01-31 19:53:00,Facebook,53,Female,Bangalore,Hair,Morning,52,1,52,True,0,0,5
+LEAD_1134,Sarah Blackburn,2025-01-30,SmileCare_Promo,Youngsters_Fitness,270.3,4238,175,4.13,1.54,2025-01-30 23:37:00,Facebook,49,Male,Mumbai,Dental,Afternoon,137,3,84,True,1,2025-02-01 00:00:00,5
+LEAD_1135,Terri Washington,2025-01-26,SkinGlow_AdSet,Retarget_OldLeads,917.83,4008,167,4.17,5.5,2025-01-26 04:54:00,Facebook,19,Male,Mumbai,Skin,Morning,86,4,41,True,0,0,4
+LEAD_1136,Emma Bradford,2025-01-31,DentalCare_2025,Youngsters_Fitness,983.07,3617,164,4.53,5.99,2025-01-31 16:47:00,Facebook,23,Other,Delhi,Wellness,Morning,21,2,99,True,0,0,5
+LEAD_1137,Todd Lee,2025-01-26,SkinGlow_AdSet,Retarget_OldLeads,489.02,4026,83,2.06,5.89,2025-01-26 04:37:00,Facebook,21,Female,Kolkata,Wellness,Afternoon,230,4,99,True,0,0,4
+LEAD_1138,Rachel Ball,2025-01-27,HairRevive_Offer,Men_30plus,370.87,2387,77,3.23,4.82,2025-01-27 00:21:00,Facebook,43,Male,Mumbai,Wellness,Morning,21,4,61,True,0,0,5
+LEAD_1139,Abigail Martinez,2025-01-31,SkinGlow_AdSet,GeneralAudience,976.14,2853,23,0.81,42.44,2025-01-31 07:39:00,Facebook,24,Female,Ranchi,Skin,Morning,33,4,75,True,0,0,5
+LEAD_1140,Cameron Thomas,2025-01-28,SmileCare_Promo,Retarget_OldLeads,391.25,1406,42,2.99,9.32,2025-01-28 12:17:00,Facebook,46,Female,Ranchi,Dental,Morning,83,3,50,True,0,0,5
+LEAD_1141,Timothy Fields,2025-01-27,DentalCare_2025,GeneralAudience,815.33,538,24,4.46,33.97,2025-01-27 18:27:00,Facebook,39,Other,Bangalore,Dental,Evening,161,3,91,True,0,0,5
+LEAD_1142,Ryan Johnson,2025-01-26,Wellness_Boost,GeneralAudience,966.91,4278,90,2.1,10.74,2025-01-26 01:23:00,Facebook,23,Female,Mumbai,Wellness,Afternoon,188,4,68,True,0,0,4
+LEAD_1143,Lauren Cox,2025-01-26,DentalCare_2025,Retarget_OldLeads,306.96,4463,175,3.92,1.75,2025-01-26 03:27:00,Facebook,44,Male,Bangalore,Skin,Morning,193,3,88,True,1,2025-01-30 00:00:00,4
+LEAD_1144,Anthony Wong,2025-01-31,SmileCare_Promo,Youngsters_Fitness,182.05,1484,154,10.38,1.18,2025-01-31 15:59:00,Facebook,61,Other,Ranchi,Dental,Morning,12,3,85,True,1,2025-02-05 00:00:00,5
+LEAD_1145,Chad Campbell,2025-01-28,SmileCare_Promo,Retarget_OldLeads,654.99,4399,131,2.98,5.0,2025-01-28 08:40:00,Facebook,55,Male,Delhi,Skin,Afternoon,50,1,69,True,1,2025-02-01 00:00:00,5
+LEAD_1146,Dana Ingram,2025-01-31,Wellness_Boost,Retarget_OldLeads,157.79,1516,197,12.99,0.8,2025-01-31 12:00:00,Facebook,25,Female,Mumbai,Skin,Morning,121,2,63,True,0,0,5
+LEAD_1147,Lauren Bennett,2025-01-28,HairRevive_Offer,Youngsters_Fitness,455.99,773,73,9.44,6.25,2025-01-28 23:35:00,Facebook,28,Other,Kolkata,Skin,Evening,99,3,84,True,0,0,5
+LEAD_1148,Cheryl Best,2025-01-29,SmileCare_Promo,Youngsters_Fitness,231.33,4262,97,2.28,2.38,2025-01-29 18:29:00,Facebook,45,Other,Bangalore,Dental,Afternoon,80,1,85,True,0,0,5
+LEAD_1149,Charles Stewart,2025-01-27,SkinGlow_AdSet,Retarget_OldLeads,108.79,3220,177,5.5,0.61,2025-01-27 09:48:00,Facebook,43,Male,Delhi,Hair,Morning,101,2,72,True,1,2025-01-28 00:00:00,5
+LEAD_1150,Laura Castro,2025-01-29,SkinGlow_AdSet,Target_Women_25_45,610.79,3674,175,4.76,3.49,2025-01-29 22:08:00,Facebook,57,Male,Mumbai,Hair,Afternoon,178,2,89,True,1,2025-02-02 00:00:00,5
+LEAD_1151,Marcus Schneider,2025-01-26,SkinGlow_AdSet,GeneralAudience,128.43,816,132,16.18,0.97,2025-01-26 21:27:00,Facebook,25,Other,Mumbai,Wellness,Afternoon,10,1,78,True,1,2025-01-30 00:00:00,4
+LEAD_1152,Thomas Rodriguez,2025-01-25,DentalCare_2025,Retarget_OldLeads,405.51,3889,93,2.39,4.36,2025-01-25 00:21:00,Facebook,43,Female,Kolkata,Skin,Evening,131,3,59,True,0,0,4
+LEAD_1153,Amber Beard,2025-01-30,SkinGlow_AdSet,GeneralAudience,573.76,1014,136,13.41,4.22,2025-01-30 22:04:00,Facebook,36,Other,Mumbai,Hair,Morning,110,3,57,True,1,2025-02-04 00:00:00,5
+LEAD_1154,Eric Gould,2025-01-30,SkinGlow_AdSet,Men_30plus,769.85,1249,109,8.73,7.06,2025-01-30 15:13:00,Facebook,36,Other,Bangalore,Skin,Evening,225,5,94,True,1,2025-02-05 00:00:00,5
+LEAD_1155,Jordan Gibson,2025-01-29,HairRevive_Offer,Retarget_OldLeads,543.95,811,114,14.06,4.77,2025-01-29 15:02:00,Facebook,29,Male,Delhi,Wellness,Evening,160,2,90,True,1,2025-01-30 00:00:00,5
+LEAD_1156,Michael Wolf DDS,2025-01-24,Wellness_Boost,Youngsters_Fitness,768.44,658,195,29.64,3.94,2025-01-24 15:55:00,Facebook,41,Male,Bangalore,Wellness,Evening,152,5,43,True,0,0,4
+LEAD_1157,Ryan Stanton,2025-01-25,Wellness_Boost,Target_Women_25_45,620.81,2212,188,8.5,3.3,2025-01-25 05:34:00,Facebook,51,Female,Mumbai,Wellness,Afternoon,168,2,92,True,0,0,4
+LEAD_1158,Billy Chen,2025-01-27,HairRevive_Offer,Target_Women_25_45,349.15,2297,48,2.09,7.27,2025-01-27 08:49:00,Facebook,57,Male,Mumbai,Wellness,Evening,119,2,93,True,0,0,5
+LEAD_1159,Amanda Smith DDS,2025-01-28,Wellness_Boost,Youngsters_Fitness,798.4,3458,108,3.12,7.39,2025-01-28 04:52:00,Facebook,22,Other,Kolkata,Skin,Afternoon,104,2,83,True,0,0,5
+LEAD_1160,Randall Bennett,2025-01-29,SkinGlow_AdSet,Youngsters_Fitness,322.51,3552,50,1.41,6.45,2025-01-29 18:27:00,Facebook,19,Female,Mumbai,Skin,Afternoon,64,5,86,True,0,0,5
+LEAD_1161,Connor Norman,2025-01-30,DentalCare_2025,Target_Women_25_45,380.93,3716,132,3.55,2.89,2025-01-30 05:00:00,Facebook,40,Other,Bangalore,Wellness,Afternoon,32,2,74,True,1,2025-02-03 00:00:00,5
+LEAD_1162,Donald Smith,2025-01-30,SkinGlow_AdSet,Men_30plus,166.15,3966,19,0.48,8.74,2025-01-30 21:20:00,Facebook,22,Other,Mumbai,Wellness,Evening,18,2,68,True,0,0,5
+LEAD_1163,Ronald Wade,2025-01-27,Wellness_Boost,Target_Women_25_45,423.33,2860,73,2.55,5.8,2025-01-27 02:44:00,Facebook,61,Male,Mumbai,Dental,Afternoon,32,1,82,True,0,0,5
+LEAD_1164,Justin Taylor,2025-01-31,Wellness_Boost,GeneralAudience,881.44,2703,120,4.44,7.35,2025-01-31 17:23:00,Facebook,43,Male,Ranchi,Dental,Evening,112,3,59,True,1,2025-02-05 00:00:00,5
+LEAD_1165,Tim Bailey,2025-01-28,SmileCare_Promo,Youngsters_Fitness,384.54,1558,68,4.36,5.66,2025-01-28 21:14:00,Facebook,60,Other,Ranchi,Wellness,Morning,183,4,81,True,0,0,5
+LEAD_1166,Eric Wilson,2025-01-29,SmileCare_Promo,Target_Women_25_45,975.79,4565,59,1.29,16.54,2025-01-29 02:30:00,Facebook,62,Female,Ranchi,Dental,Afternoon,43,3,89,True,0,0,5
+LEAD_1167,Christina Jackson,2025-01-27,HairRevive_Offer,Retarget_OldLeads,706.09,2469,133,5.39,5.31,2025-01-27 08:36:00,Facebook,64,Other,Mumbai,Wellness,Afternoon,89,1,94,True,0,0,5
+LEAD_1168,Kara Turner,2025-01-29,Wellness_Boost,Men_30plus,695.47,1698,43,2.53,16.17,2025-01-29 19:28:00,Facebook,43,Female,Bangalore,Dental,Afternoon,123,2,82,True,0,0,5
+LEAD_1169,Danny Johnson,2025-01-31,SmileCare_Promo,Retarget_OldLeads,127.35,802,122,15.21,1.04,2025-01-31 21:50:00,Facebook,33,Other,Delhi,Skin,Afternoon,76,1,85,True,0,0,5
+LEAD_1170,Donald Mueller,2025-01-29,Wellness_Boost,Youngsters_Fitness,686.11,3624,57,1.57,12.04,2025-01-29 09:34:00,Facebook,26,Other,Mumbai,Skin,Afternoon,94,4,41,False,0,0,5
+LEAD_1171,Michele Cline,2025-01-24,HairRevive_Offer,Retarget_OldLeads,359.82,3132,86,2.75,4.18,2025-01-24 00:18:00,Facebook,23,Other,Kolkata,Dental,Afternoon,207,4,73,True,1,2025-01-30 00:00:00,4
+LEAD_1172,Linda Peterson,2025-01-25,DentalCare_2025,GeneralAudience,492.02,1500,32,2.13,15.38,2025-01-25 12:04:00,Facebook,32,Female,Mumbai,Wellness,Afternoon,79,1,63,True,0,0,4
+LEAD_1173,Jennifer Walker,2025-01-24,HairRevive_Offer,Men_30plus,725.92,3647,152,4.17,4.78,2025-01-24 04:50:00,Facebook,61,Other,Delhi,Wellness,Morning,64,5,64,True,0,0,4
+LEAD_1174,Tiffany Beard,2025-01-29,Wellness_Boost,Target_Women_25_45,251.6,3838,108,2.81,2.33,2025-01-29 05:27:00,Facebook,19,Female,Kolkata,Wellness,Afternoon,210,2,41,True,1,2025-01-31 00:00:00,5
+LEAD_1175,Kevin Nelson,2025-01-29,SmileCare_Promo,GeneralAudience,832.39,2447,126,5.15,6.61,2025-01-29 22:03:00,Facebook,53,Male,Delhi,Hair,Morning,157,4,44,True,0,0,5
+LEAD_1176,William Velazquez,2025-01-30,Wellness_Boost,Target_Women_25_45,594.47,542,185,34.13,3.21,2025-01-30 16:44:00,Facebook,38,Other,Kolkata,Skin,Evening,50,2,83,False,0,0,5
+LEAD_1177,Daniel Roberts,2025-01-30,SmileCare_Promo,GeneralAudience,682.73,1514,89,5.88,7.67,2025-01-30 02:20:00,Facebook,39,Other,Delhi,Skin,Afternoon,128,1,75,True,1,2025-02-04 00:00:00,5
+LEAD_1178,Nancy Griffin,2025-01-26,HairRevive_Offer,Youngsters_Fitness,356.39,1463,126,8.61,2.83,2025-01-26 01:45:00,Facebook,53,Other,Kolkata,Skin,Afternoon,31,5,86,True,0,0,4
+LEAD_1179,Benjamin Chandler,2025-01-29,DentalCare_2025,GeneralAudience,345.36,2181,11,0.5,31.4,2025-01-29 17:42:00,Facebook,30,Female,Kolkata,Skin,Evening,136,2,64,True,1,2025-02-02 00:00:00,5
+LEAD_1180,Christina Palmer,2025-01-30,SkinGlow_AdSet,Men_30plus,814.07,4154,65,1.56,12.52,2025-01-30 23:28:00,Facebook,61,Other,Mumbai,Dental,Evening,193,2,95,False,0,0,5
+LEAD_1181,John Harris,2025-01-31,SkinGlow_AdSet,GeneralAudience,201.07,2208,115,5.21,1.75,2025-01-31 00:09:00,Facebook,41,Male,Ranchi,Wellness,Morning,145,5,61,True,0,0,5
+LEAD_1182,Patrick Davidson,2025-01-25,HairRevive_Offer,Target_Women_25_45,910.02,2160,179,8.29,5.08,2025-01-25 18:03:00,Facebook,56,Male,Mumbai,Skin,Afternoon,212,1,65,True,1,2025-01-28 00:00:00,4
+LEAD_1183,Christine Parker,2025-01-25,HairRevive_Offer,Youngsters_Fitness,661.47,645,156,24.19,4.24,2025-01-25 20:49:00,Facebook,50,Female,Delhi,Dental,Evening,229,2,44,True,0,0,4
+LEAD_1184,Morgan Baker,2025-01-30,Wellness_Boost,Retarget_OldLeads,381.04,1161,185,15.93,2.06,2025-01-30 18:20:00,Facebook,42,Other,Delhi,Dental,Morning,167,4,46,True,1,2025-02-05 00:00:00,5
+LEAD_1185,Martin Randolph,2025-01-25,SkinGlow_AdSet,Retarget_OldLeads,637.34,1843,44,2.39,14.49,2025-01-25 07:38:00,Facebook,56,Female,Bangalore,Dental,Afternoon,150,3,81,True,0,0,4
+LEAD_1186,Ronald Flores,2025-01-31,DentalCare_2025,Men_30plus,642.9,2849,28,0.98,22.96,2025-01-31 05:52:00,Facebook,53,Male,Kolkata,Hair,Afternoon,106,2,71,True,1,2025-02-05 00:00:00,5
+LEAD_1187,Kyle Evans,2025-01-26,HairRevive_Offer,Target_Women_25_45,430.26,572,145,25.35,2.97,2025-01-26 15:55:00,Facebook,22,Female,Mumbai,Dental,Morning,74,1,78,True,0,0,4
+LEAD_1188,Denise Hunter,2025-01-27,Wellness_Boost,Youngsters_Fitness,586.01,4110,169,4.11,3.47,2025-01-27 05:41:00,Facebook,23,Other,Mumbai,Wellness,Evening,234,2,42,True,1,2025-01-30 00:00:00,5
+LEAD_1189,Patricia Baker,2025-01-25,HairRevive_Offer,GeneralAudience,695.66,3274,181,5.53,3.84,2025-01-25 07:32:00,Facebook,30,Female,Delhi,Wellness,Afternoon,213,3,73,True,1,2025-01-31 00:00:00,4
+LEAD_1190,Margaret Reid,2025-01-28,SkinGlow_AdSet,Men_30plus,280.84,2834,56,1.98,5.01,2025-01-28 10:56:00,Facebook,33,Female,Bangalore,Hair,Evening,212,2,69,True,0,0,5
+LEAD_1191,Stephanie Perez,2025-01-27,HairRevive_Offer,Youngsters_Fitness,934.46,4219,12,0.28,77.87,2025-01-27 21:11:00,Facebook,61,Male,Kolkata,Hair,Morning,27,4,90,True,0,0,5
+LEAD_1192,Timothy Richardson,2025-01-24,DentalCare_2025,Target_Women_25_45,183.64,785,158,20.13,1.16,2025-01-24 12:17:00,Facebook,31,Other,Kolkata,Hair,Morning,154,2,47,True,1,2025-01-28 00:00:00,4
+LEAD_1193,James Cordova Jr.,2025-01-27,DentalCare_2025,Youngsters_Fitness,178.88,2101,114,5.43,1.57,2025-01-27 23:50:00,Facebook,43,Male,Delhi,Hair,Evening,223,1,48,True,0,0,5
+LEAD_1194,Brian Stevens,2025-01-27,SmileCare_Promo,Target_Women_25_45,927.45,4906,15,0.31,61.83,2025-01-27 09:20:00,Facebook,59,Other,Ranchi,Hair,Afternoon,175,4,76,True,0,0,5
+LEAD_1195,James Nguyen,2025-01-29,SkinGlow_AdSet,Retarget_OldLeads,442.56,1093,182,16.65,2.43,2025-01-29 01:12:00,Facebook,32,Female,Delhi,Skin,Afternoon,220,2,69,True,1,2025-02-02 00:00:00,5
+LEAD_1196,Mrs. Alexandria Chen,2025-01-28,HairRevive_Offer,GeneralAudience,411.49,4725,172,3.64,2.39,2025-01-28 21:52:00,Facebook,53,Male,Delhi,Dental,Evening,24,2,49,True,1,2025-02-03 00:00:00,5
+LEAD_1197,Jose Hoover,2025-01-30,HairRevive_Offer,Retarget_OldLeads,788.33,1633,89,5.45,8.86,2025-01-30 15:01:00,Facebook,42,Other,Mumbai,Dental,Afternoon,129,4,42,False,0,0,5
+LEAD_1198,Nicolas Moore,2025-01-28,Wellness_Boost,Youngsters_Fitness,530.41,3029,145,4.79,3.66,2025-01-28 17:15:00,Facebook,49,Other,Mumbai,Skin,Afternoon,200,1,54,False,0,0,5
+LEAD_1199,Anne Wilson,2025-01-31,SkinGlow_AdSet,Men_30plus,380.63,4179,101,2.42,3.77,2025-01-31 11:11:00,Facebook,46,Male,Kolkata,Hair,Morning,82,4,57,True,0,0,5

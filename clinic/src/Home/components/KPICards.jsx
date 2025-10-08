@@ -1,8 +1,7 @@
-//  "../../assets/social_media_ad_optimization.csv"
- import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Papa from "papaparse";
 
-export default function KPICards() {
+export default function KPICards({ filter }) {
   const [kpi, setKpi] = useState({
     totalLeads: 0,
     bookingsConfirmed: 0,
@@ -11,8 +10,42 @@ export default function KPICards() {
     consentRate: "0%",
   });
 
+  // Determine CSV file based on filter
+  const getFileName = () => {
+    if (!filter) return null; // safety check
+    const { year, month, week } = filter;
+
+    if (year === "2025" && month === "January") {
+      switch (week) {
+        case "Week 1":
+          return "./weeklly/2025-01-01.csv";
+        case "Week 2":
+          return "./weeklly/2025-01-08.csv";
+        case "Week 3":
+          return "./weeklly/2025-01-15.csv";
+        case "Week 4":
+          return "./weeklly/2025-01-23.csv";
+        default:
+          return null;
+      }
+    }
+    return null;
+  };
+
   useEffect(() => {
-    Papa.parse("../../../public/clinic_facebook_leads (1).csv", {
+    const fileName = getFileName();
+    if (!fileName) return; // no CSV for current filter
+
+    // Reset KPIs while loading
+    setKpi({
+      totalLeads: 0,
+      bookingsConfirmed: 0,
+      conversionRate: "0%",
+      avgLeadScore: 0,
+      consentRate: "0%",
+    });
+
+    Papa.parse(fileName, {
       download: true,
       header: true,
       skipEmptyLines: true,
@@ -20,15 +53,12 @@ export default function KPICards() {
         let data = result.data;
         if (!data || data.length === 0) return;
 
-        // Clean headers and handle string conversions
+        // Clean and parse CSV
         data = data.map((d) => ({
           Lead_ID: d["Lead_ID"]?.trim(),
-          Lead_Score: parseFloat(d["Lead_Score"]) || 0,
+          Lead_Score: parseFloat(d["Engagement_Score"]) || 0, // you can adjust field
           Appointment_Booked:
-            d["Appointment_Booked"] === "1" ||
-            d["Appointment_Booked"] === 1
-              ? 1
-              : 0,
+            d["Appointment_Booked"] === "1" || d["Appointment_Booked"] === 1 ? 1 : 0,
           Consent_Status:
             d["Consent_Status"] === true ||
             d["Consent_Status"] === "TRUE" ||
@@ -54,33 +84,23 @@ export default function KPICards() {
           totalLeads,
           bookingsConfirmed,
           conversionRate,
-          // avgLeadScore,
+          avgLeadScore,
           consentRate,
         });
       },
     });
-  }, []);
+  }, [filter]); // ✅ updates whenever filter changes
 
   const cards = [
     { title: "Total Leads", value: kpi.totalLeads },
     { title: "Bookings Confirmed", value: kpi.bookingsConfirmed },
     { title: "Conversion Rate", value: kpi.conversionRate },
-    // { title: "Avg Lead Score", value: kpi.avgLeadScore },
+    { title: "Avg Lead Score", value: kpi.avgLeadScore },
     { title: "Consent Rate", value: kpi.consentRate },
   ];
 
-   // Book button handler
-  const handleBook = (id) => {
-    setLeads((prevLeads) =>
-      prevLeads.map((lead) =>
-        lead.id === id ? { ...lead, status: "Booked" } : lead
-      )
-    );
-  };
-
-
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
+    <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-6">
       {cards.map((card, idx) => (
         <div
           key={idx}

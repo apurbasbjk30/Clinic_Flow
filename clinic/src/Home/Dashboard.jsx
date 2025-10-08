@@ -68,7 +68,7 @@ export default function Dashboard() {
 
         {/* BOOKING IMPACT */}
         <section className="bg-gradient-to-r from-cyan-50 to-blue-50 p-6 rounded-2xl shadow-md border border-blue-100 hover:shadow-lg transition">
-          <BookingImpactChart />
+          <BookingImpactChart filter={filter}/>
         </section>
 
         {/* INSIGHTS GRID */}

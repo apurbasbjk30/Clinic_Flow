@@ -48,13 +48,13 @@ export default function BookingImpactChart({ filter }) {
             // ----- Choose parameters dynamically per week -----
             let parameters = [];
             if (filter.week === "Week 1") {
-              parameters = ["Lead Score", "Time of Day", "Previous Booking Status"];
+              parameters = ["Lead Score", "Time of Day", "Previous Booking Status","Treatment_Interest", "Gender", "Preferred_Slot", "Frequency of Visits", "Age Group", "Occupation"];
             } else if (filter.week === "Week 2") {
-              parameters = ["Lead Score", "Treatment_Interest", "Gender"];
+              parameters = ["Lead Score", "Time of Day", "Previous Booking Status","Treatment_Interest", "Gender", "Preferred_Slot", "Frequency of Visits", "Age Group", "Occupation"];
             } else if (filter.week === "Week 3") {
-              parameters = ["Lead Score", "Preferred_Slot", "Frequency of Visits"];
+              parameters = ["Lead Score", "Time of Day", "Previous Booking Status","Treatment_Interest", "Gender", "Preferred_Slot", "Frequency of Visits", "Age Group", "Occupation"];
             } else {
-              parameters = ["Lead Score", "Age Group", "Occupation"];
+              parameters = ["Lead Score", "Time of Day", "Previous Booking Status","Treatment_Interest", "Gender", "Preferred_Slot", "Frequency of Visits", "Age Group", "Occupation"];
             }
 
             // Calculate mock impact values
